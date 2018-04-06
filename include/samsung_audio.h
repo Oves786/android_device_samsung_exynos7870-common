@@ -63,6 +63,11 @@
 #define SUPPORTS_IRQ_AFFINITY 0
 
 /*
+ * You can that this to 1 if your device has an amplifier
+ */
+#define SUPPORTS_AMPLIFIER 0
+
+/*
  * The Wolfson/Cirruslogic chips need to shutdown the DAPM route completely
  * to be able to load a new firmware. Some of these chips need a delay after
  * shutodown to full poweroff the DSPs.
