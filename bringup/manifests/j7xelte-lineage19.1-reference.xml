@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Android 12L REFERENCE baseline, not an Android 17 manifest.
+     Adapted from Exynos7870-Revived-Beta/android_manifest_samsung_universal7870-common
+     j7xelte.xml at cf678e2877f9f39dc5c2d7b54326f73fa15054a4.
+     Each device-specific dependency is pinned to its inspected lineage-19.1 head.
+     This uses the upstream common tree, not the experimental Oreo-derived common tree.
+     Use only with a fresh LineageOS 19.1 checkout. -->
+<manifest>
+    <remote name="exynos7870-reference" fetch="https://github.com/Exynos7870-Revived-Beta/" />
+    <remote name="lineage-reference" fetch="https://github.com/LineageOS/" />
+    <project name="android_device_samsung_j7xelte" path="device/samsung/j7xelte" remote="exynos7870-reference" revision="3f6b32c22ce9195ad45c417f412703b5f5a1c8c2" upstream="refs/heads/lineage-19.1" />
+    <project name="android_device_samsung_universal7870-common" path="device/samsung/universal7870-common" remote="exynos7870-reference" revision="3ce6db72695a65c09e98bf5b07b8818d30a56e8d" upstream="refs/heads/lineage-19.1" />
+    <project name="android_kernel_samsung_exynos7870" path="kernel/samsung/exynos7870" remote="exynos7870-reference" revision="455cdd6861c6137c4205124c279c54829e3cd6e6" upstream="refs/heads/lineage-19.1" />
+    <project name="android_vendor_samsung_j7xelte" path="vendor/samsung/j7xelte" remote="exynos7870-reference" revision="db91c5c2558d5af35c9e2e781d862d0288cbe178" upstream="refs/heads/lineage-19.1" />
+    <project name="android_vendor_samsung_universal7870-common" path="vendor/samsung/universal7870-common" remote="exynos7870-reference" revision="02108c10c87473595eddbe59cb2f409c3e300f63" upstream="refs/heads/lineage-19.1" />
+    <project name="android_hardware_samsung" path="hardware/samsung" remote="exynos7870-reference" revision="ddcb6d6422344c47b8d0568bd1ec69452ab2f62b" upstream="refs/heads/lineage-19.1" />
+    <project name="android_hardware_samsung_slsi-linaro_config" path="hardware/samsung_slsi-linaro/config" remote="exynos7870-reference" revision="ee86f94770f7c1c2c8880cbcac60abe4092264ae" upstream="refs/heads/lineage-19.1" />
+    <project name="android_hardware_samsung_slsi-linaro_graphics" path="hardware/samsung_slsi-linaro/graphics" remote="exynos7870-reference" revision="46a2b184a4cfb308b773221a1ad145b80a8fbce5" upstream="refs/heads/lineage-19.1" />
+    <project name="android_hardware_samsung_slsi-linaro_exynos" path="hardware/samsung_slsi-linaro/exynos" remote="exynos7870-reference" revision="1c210e85e8adff90fb2209e2d59689118ec5f04a" upstream="refs/heads/lineage-19.1" />
+    <project name="android_hardware_samsung_slsi-linaro_openmax" path="hardware/samsung_slsi-linaro/openmax" remote="exynos7870-reference" revision="e1e654dee14161667607778447080b4441a9c570" upstream="refs/heads/lineage-19.1" />
+    <project name="android_hardware_samsung_slsi-linaro_exynos5" path="hardware/samsung_slsi-linaro/exynos5" remote="exynos7870-reference" revision="dd2f9115c2fcb8767a9766da898f06b657872997" upstream="refs/heads/lineage-19.1" />
+    <project name="Patches" path="patches" remote="exynos7870-reference" revision="c0a4c127a2e315d4c17bf54dd9489a3d6b7363d5" upstream="refs/heads/lineage-19.1" />
+    <project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="lineage-reference" revision="39c1ece23e5bbac066ee09bfec6233f8b191d2a6" upstream="refs/heads/lineage-19.1" />
+</manifest>
