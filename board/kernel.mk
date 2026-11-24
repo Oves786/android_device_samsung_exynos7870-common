@@ -21,7 +21,8 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Kernel Configs
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_HEADER_ARCH := arm
+# Keep kernel UAPI header architecture aligned with the selected userspace.
+TARGET_KERNEL_HEADER_ARCH := $(TARGET_ARCH)
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
 BOARD_KERNEL_IMAGE_NAME := Image
